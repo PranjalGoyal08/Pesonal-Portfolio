@@ -1,0 +1,1435 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.navbar {
+    position: fixed;
+    width: 100%;
+    /* background-color: rgb(15, 15, 15); */
+    padding: 20px 0;
+    transition: all 0.3s ease;
+    z-index: 1;
+}
+
+.sticky {
+    padding: 10px 0;
+    background-color: rgb(122, 3, 43);
+    z-index: 1;
+}
+
+.max-width {
+    max-width: 1500px;
+    padding: 0 100px;
+    margin: auto;
+}
+
+.navbar .max-width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a {
+    font-size: 35px;
+    color: #fff;
+    font-weight: 700;
+}
+
+.navbar .menu li {
+    display: inline-block;
+    list-style: none;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: rgb(247, 247, 247);
+    font-size: 25px;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.navbar .menu li a:hover {
+    color: rgb(236, 12, 87);
+}
+
+.sticky .menu li a:hover {
+    color: black;
+}
+
+.menu-btn {
+    display: none;
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+}
+
+.line {
+    width: 30px;
+    background-color: #fff;
+    height: 4px;
+    margin: 3px;
+}
+
+.home {
+    display: flex;
+    background: url("image/bgg.jpg") no-repeat center center/cover fixed;
+    height: 100vh;
+    color: #ffff;
+    min-height: 500px;
+    scroll-behavior: smooth;
+}
+
+.home .max-width {
+    margin: auto 20px auto 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.home .first {
+    text-align: right;
+    font-size: 500px;
+    font-weight: bolder;
+    color: rgb(236, 12, 87);
+    text-shadow: 16px 16px 36px rgb(104, 4, 4);
+    transform: rotate(15deg);
+}
+
+.home .intro {
+    padding-top: 180px;
+}
+
+.home .intro .text-1 {
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.home .intro .text-2 {
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.home .intro .text-3 {
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 20px;
+}
+
+.home .intro .text-3 span {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(236, 12, 87);
+}
+
+.home .intro a {
+    border: 2px solid rgb(70, 1, 24);
+    background-color: rgb(236, 12, 87);
+    padding: 12px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #fff;
+    box-shadow: 5px 5px 4px rgb(70, 1, 24);
+}
+
+.home .intro a:hover {
+    color: #111;
+}
+
+.about {
+    background-color: #363636;
+    height: 100%;
+    width: 100%;
+    color: #ffff;
+    padding: 10px 50px 50px 0;
+}
+
+.max-width h2 {
+    margin: 2px 2px 25px 2px;
+    padding: 9px;
+    text-align: center;
+    font-size: 75px;
+    text-decoration: underline 3px;
+}
+
+.about .about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+    margin-top: 30px;
+}
+
+.about .about-content .right-side {
+    width: 45%;
+    padding-left: 100px;
+}
+
+.about .about-content .right-side img {
+    height: 410px;
+    width: 390px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.about .about-content .left-side {
+    width: 55%;
+    padding: 10px 30px 0 80px;
+}
+
+.about .about-content .left-side .name {
+    font-size: 30px;
+    /* text-align: center; */
+}
+
+.about .about-content .left-side .name span {
+    font-weight: 700;
+    color: rgb(236, 12, 87);
+}
+
+.about .about-content .left-side .about-me {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.about .about-content .left-side a {
+    border: 2px solid rgb(70, 1, 24);
+    background-color: rgb(236, 12, 87);
+    padding: 12px;
+    border-radius: 15px;
+    font-size: 30px;
+    color: #fff;
+    box-shadow: 5px 5px 4px rgb(70, 1, 24);
+
+}
+
+.about .about-content .left-side a:hover {
+    color: #111;
+}
+
+.skills {
+    background-color: #363636;
+    height: 100%;
+    width: 100%;
+    color: #ffff;
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.skills .max-width h2 {
+    margin-bottom: 2px;
+}
+
+.skills-content {
+    font-family: 'Raleway', sans-serif;
+    margin: auto;
+    max-width: 700px;
+
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+}
+
+.skill {
+    margin-top: 20px;
+}
+
+.bar {
+    position: relative;
+
+    border: 2px solid #0d96e0;
+
+    border-radius: 20px;
+
+}
+
+.bar div {
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #0d96e0;
+
+
+}
+
+#html-bar {
+    animation: html-fill 2s forwards;
+}
+
+@keyframes html-fill {
+    100% {
+        width: 80%;
+    }
+}
+
+#css-bar {
+    animation: css-fill 2s forwards;
+}
+
+@keyframes css-fill {
+    100% {
+        width: 80%;
+    }
+}
+
+#js-bar {
+    animation: js-fill 2s forwards;
+}
+
+@keyframes js-fill {
+    100% {
+        width: 75%;
+    }
+}
+
+#java-bar {
+    animation: java-fill 2s forwards;
+}
+
+@keyframes java-fill {
+    100% {
+        width: 70%;
+    }
+}
+
+#python-bar {
+    animation: python-fill 2s forwards;
+}
+
+@keyframes python-fill {
+    100% {
+        width: 65%;
+    }
+}
+
+#php-bar {
+    animation: php-fill 2s forwards;
+}
+
+@keyframes php-fill {
+    100% {
+        width: 60%;
+    }
+}
+
+#md-bar {
+    animation: md-fill 2s forwards;
+}
+
+@keyframes md-fill {
+    100% {
+        width: 60%;
+    }
+}
+
+#mys-bar {
+    animation: mys-fill 2s forwards;
+}
+
+@keyframes mys-fill {
+    100% {
+        width: 60%;
+    }
+}
+
+.contact {
+    background-color: #363636;
+    height: 100%;
+    width: 100%;
+    color: #ffff;
+    padding: 20px 50px 50px 0;
+}
+
+.detail {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Raleway', sans-serif;
+    margin: 20px;
+    margin-left: 110px;
+    position: relative;
+}
+
+.detail .leftside {
+    margin: 25px 50px;
+    padding: 25px 50px;
+}
+
+.leftside .field {
+    padding-top: 15px;
+}
+
+.leftside .field input {
+    height: 32px;
+    width: 400px;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    outline: none;
+    font-size: 17px;
+    padding: 8px;
+}
+
+.leftside .btn {
+    padding: 5px;
+    margin: 12px auto;
+    width: 180px;
+}
+
+.leftside .btn button {
+    border: 2px solid rgb(70, 1, 24);
+    background-color: rgb(236, 12, 87);
+    padding: 12px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: #fff;
+    box-shadow: 5px 5px 4px rgb(70, 1, 24);
+}
+
+.leftside .btn button:hover {
+    color: #111;
+}
+
+.detail .rightside {
+    margin: 25px 5px;
+    padding: 25px 5px;
+}
+
+.rightside .info {
+    margin: 9px;
+    padding: 2px;
+}
+
+.rightside .ques {
+    font-weight: 800;
+    font-size: 20px;
+    padding: 2px;
+}
+
+.certificate {
+    background-color: #363636;
+    height: 100%;
+    width: 100%;
+    color: #ffff;
+    padding: 20px 50px 50px 0;
+}
+
+.certificate .images {
+    margin: 2px;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.certificate .token {
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 35px;
+    border: 2px solid #363636;
+    padding: 2px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 4px 4px black;
+}
+
+.certificate .token:hover {
+    transition-timing-function: ease-out;
+}
+
+.certificate .last {
+    margin: 20px auto;
+}
+
+.certificate .token img {
+    width: 500px;
+    height: 400px;
+}
+
+@media (max-width: 1345px) {
+    .certificate .token img {
+        width: 425px;
+        height: 350px
+    }
+}
+
+@media (max-width: 1150px) {
+    .max-width {
+        padding: 0 50px;
+    }
+
+    .menu-btn {
+        display: block;
+        z-index: 999;
+    }
+
+    /* .menu-btn.active .line:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-btn.active .line:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .menu-btn.active .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    } */
+    .menu-btn i.active:before {
+        content: "\f00d";
+    }
+
+    .navbar .menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        left: -100%;
+        background-color: #111;
+        text-align: center;
+        padding-right: 30px;
+        transition: 0.4s ease;
+        align-items: center;
+        padding-top: 80px;
+    }
+
+    .sticky .menu li a:hover {
+        color: rgb(236, 12, 87);
+    }
+
+    .navbar .menu li {
+        display: block;
+    }
+
+    .navbar .menu li a {
+        display: inline-block;
+        margin: 30px 0;
+        font-size: 25px;
+    }
+
+    .navbar .menu.active {
+        left: 0;
+    }
+
+    .home .first {
+        font-size: 300px;
+    }
+
+    .home .intro .text-1 {
+        font-size: 40px;
+    }
+
+    .home .intro .text-2 {
+        font-size: 60px;
+    }
+
+    .home .intro .text-3 {
+        font-size: 40px;
+    }
+
+    .home .intro {
+        padding-top: 70px;
+    }
+
+    .about .max-width {
+        height: 632px;
+    }
+
+    .about .about-content .left-side {
+        padding-left: 50px;
+    }
+
+    .about .about-content .right-side {
+        padding-left: 60px;
+    }
+
+    .detail {
+        margin-left: 80px;
+    }
+
+    .certificate .token img {
+        width: 425px;
+        height: 350px
+    }
+}
+
+@media(max-width: 1100px) {
+    .about .max-width {
+        height: 632px;
+    }
+
+    .about .about-content .right-side {
+        padding-left: 40px;
+    }
+
+    .detail {
+        margin-left: 70px;
+    }
+
+    .certificate .token img {
+        width: 400px;
+        height: 350px
+    }
+}
+
+@media(max-width: 1050px) {
+
+    body,
+    html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow: auto;
+    }
+
+    .about .max-width {
+        height: 650px;
+    }
+
+    .detail {
+        margin-left: 35px;
+    }
+
+    .certificate .token img {
+        width: 355px;
+        height: 320px
+    }
+}
+
+@media(max-width: 950px) {
+    .about .about-content {
+        margin-top: 20px;
+    }
+
+    .about .about-content .right-side {
+        padding-left: 2px;
+    }
+
+    .about .about-content .right-side img {
+        height: 500px;
+    }
+
+    .about .max-width {
+        height: 632px;
+    }
+
+    .about .about-content .left-side {
+        padding-left: 20px;
+        padding-right: 46px;
+        font-size: 35px;
+    }
+
+    .detail {
+        margin-left: 2px;
+    }
+
+    .certificate .token img {
+        width: 325px;
+        height: 290px
+    }
+}
+@media(max-width:953px){
+    .certificate .token img {
+        width: 320px;
+        height: 290px
+    }
+}
+
+@media(max-width: 900px) {
+    .navbar .logo a {
+        padding-left: 54px;
+    }
+
+    .home .first {
+        font-size: 300px;
+    }
+
+    .home .intro .text-1 {
+        font-size: 35px;
+    }
+
+    .home .intro .text-2 {
+        font-size: 55px;
+    }
+
+    .home .intro .text-3 {
+        font-size: 35px;
+    }
+
+    .home .intro .text-3 span {
+        font-size: 35px;
+    }
+
+    .home .intro {
+        padding-left: 5px;
+    }
+
+    .about .max-width {
+        height: 632px;
+    }
+
+    .about .about-content .right-side img {
+        padding-right: 20px;
+    }
+
+    .about .about-content .left-side {
+        padding-left: 6px;
+        padding-right: 50px;
+        font-size: 10px;
+    }
+
+    .about .about-content .left-side .name {
+        font-size: 25px;
+        /* text-align: center; */
+    }
+
+    .about .about-content .left-side .name span {
+        font-weight: 900;
+        color: rgb(236, 12, 87);
+    }
+
+    .about .about-content .left-side .about-me {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .detail .leftside {
+        margin-left: 5px;
+    }
+
+    .certificate .token img {
+        width: 300px;
+        height: 280px
+    }
+}
+
+@media(max-width: 850px) {
+    .about .max-width {
+        margin-top: 30px;
+        height: 632px;
+    }
+
+    .about .about-content {
+        margin-top: 15px;
+    }
+
+    .about .about-content .right-side img {
+        padding-left: 4px;
+        padding-right: 47px;
+        height: 450px;
+    }
+
+    .about .about-content .left-side {
+        padding-left: 6px;
+        padding-right: 4px;
+    }
+
+    .about .about-content .left-side .name {
+        font-size: 30px;
+    }
+
+    .about .about-content .left-side .name span {
+        font-weight: 900;
+        color: rgb(236, 12, 87);
+    }
+
+    .about .about-content .left-side .about-me {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    .detail .leftside {
+        padding-left: 25px;
+        margin-right: 20px;
+    }
+
+    .certificate .token img {
+        width: 280px;
+        height: 270px
+    }
+}
+@media(max-width:805px){
+    .certificate .token img {
+        width: 267px;
+        height: 260px
+    }
+}
+@media(max-width: 780px) {
+    .max-width {
+        padding: 0 30px;
+    }
+
+    .navbar .logo a {
+        padding-left: 30px;
+    }
+
+    .about .max-width {
+        height: 730px;
+    }
+
+    .about .about-content .right-side img {
+        padding-right: 100px;
+    }
+
+    .about .about-content .left-side {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+
+    .about .about-content .left-side a {
+        padding: 5px;
+        font-size: 25px;
+    }
+
+    .about .about-content .left-side .about-me {
+        margin-bottom: 20px;
+    }
+
+    .detail .leftside {
+        margin-right: 5px;
+        padding-right: 25px;
+    }
+
+    .max-width h2 {
+        margin-left: 50px;
+    }
+
+    .certificate .token img {
+        width: 270px;
+        height: 250px
+    }
+}
+
+@media(max-width:742px) {
+    .certificate .token img {
+        width: 240px;
+        height: 230px;
+    }
+}
+
+@media(max-width: 680px) {
+    .max-width {
+        padding-left: 15px;
+    }
+
+    .navbar .logo a {
+        padding-left: 30px;
+    }
+
+    .about .max-width {
+        height: 630px;
+        margin: 2px;
+    }
+
+    .about .about-content {
+        margin-top: 15px;
+    }
+
+    .about .about-content .right-side img {
+        padding-right: 100px;
+        height: 400px;
+    }
+
+    .about .about-content .left-side {
+        padding-top: 20px;
+    }
+
+    .about .about-content .left-side .name {
+        font-size: 25px;
+    }
+
+    .about .about-content .left-side a {
+        padding: 5px;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .about .about-content .left-side .about-me {
+        margin-bottom: 15px;
+        font-size: 25px;
+    }
+
+    .max-width h2 {
+        padding-left: 20px;
+        font-size: 70px;
+    }
+
+    .contact {
+        padding: 35px 50px;
+    }
+
+    .contact .max-width {
+        border: 2px solid rgb(48, 47, 47);
+        box-shadow: 3px 3px 5px 5px black;
+    }
+
+    .contact .max-width h2 {
+        margin-left: 20px;
+    }
+
+    .detail {
+        flex-direction: column;
+        margin-bottom: 2px;
+    }
+
+    .detail .leftside {
+        margin-left: 30px;
+        padding-left: 25px;
+        margin-top: 2px;
+        padding-top: 2px;
+        margin-bottom: 1px;
+        padding-bottom: 1px;
+    }
+
+    .detail .leftside .btn {
+        margin: 0px;
+        padding-top: 15px;
+    }
+
+    .detail .rightside {
+        margin-left: 30px;
+        padding-left: 25px;
+        margin-top: 2px;
+        padding-top: 2px;
+    }
+
+    .certificate .token img {
+        width: 220px;
+        height: 200px
+    }
+}
+
+@media(max-width: 620px) {
+    .max-width {
+        padding-left: 15px;
+        padding-right: 30px;
+    }
+
+    .navbar .logo a {
+        padding-left: 55px;
+    }
+
+    .home .first {
+        font-size: 150px;
+        padding-top: 50px;
+    }
+
+    .home .intro .text-1 {
+        font-size: 25px;
+    }
+
+    .home .intro .text-2 {
+        font-size: 45px;
+    }
+
+    .home .intro .text-3 {
+        font-size: 25px;
+    }
+
+    .home .intro .text-3 span {
+        font-size: 25px;
+    }
+
+    .about .max-width {
+        height: 632px;
+    }
+
+    .about .about-content .right-side img {
+        padding-right: 120px;
+        height: 400px;
+    }
+
+    .about .about-content .left-side {
+        padding-left: 16px;
+        padding-right: 20px;
+    }
+
+    .about .about-content .left-side .name {
+        font-size: 20px;
+        /* text-align: center; */
+    }
+
+    .about .about-content .left-side .about-me {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .about .about-content .left-side a {
+        font-size: 15px;
+    }
+
+    .detail {
+        margin: 2px auto;
+    }
+
+    .detail .leftside {
+        margin: 2px auto;
+        padding-left: 35px;
+    }
+
+    .detail .rightside {
+        margin-left: 10px;
+    }
+
+    .certificate .images {
+        flex-direction: column;
+    }
+
+    .certificate .token {
+        width: 400px;
+        height: 300px;
+        padding: 20px auto;
+        margin: 20px 90px;
+    }
+
+    .certificate .token img {
+        width: 400px;
+        height: 300px
+    }
+}
+
+@media(max-width: 610px) {
+    .home .intro {
+        padding-left: 2px;
+        padding-right: 15px;
+    }
+
+    .home .first {
+        padding-top: 50px;
+        padding-left: 2px;
+        font-size: 190px;
+    }
+
+    .about .about-content {
+        flex-direction: column;
+    }
+
+    .about {
+        padding: 20px 1px 20px 1px;
+    }
+
+    .about .max-width {
+        height: 670px;
+        padding: 0;
+    }
+
+    .about .max-width h2 {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+
+    .max-width h2 {
+        margin-left: 10px;
+    }
+
+    .about .about-content .right-side img {
+        position: absolute;
+        top: 680px;
+        height: 280px;
+        width: 350px;
+
+    }
+
+    .about .about-content .left-side {
+        position: absolute;
+        top: 970px;
+        padding: 5px 15px 5px 35px;
+        width: 100%;
+    }
+
+    .about .about-content .left-side .name {
+        font-size: 25px;
+    }
+
+    .about .about-content .left-side .about-me {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .about .about-content .left-side a {
+        font-size: 25px;
+        margin-left: -2px;
+    }
+
+    .certificate .token {
+        margin: 20px 70px;
+    }
+}
+
+@media (max-width: 570px) {
+    .detail .leftside input {
+        width: 350px;
+    }
+    .certificate .token {
+        margin: 20px 50px;
+    }
+}
+
+@media (max-width: 530px) {
+    .max-width h2 {
+        font-size: 60px;
+    }
+
+    .detail .leftside input {
+        width: 350px;
+    }
+
+    .detail .leftside {
+        padding-left: 20px;
+    }
+
+    .detail .rightside {
+        padding-left: 12px;
+    }
+    .certificate .token {
+        margin: 20px 40px;
+    }
+}
+
+@media (max-width: 500px) {
+    .detail .leftside input {
+        width: 320px;
+    }
+    .certificate .token {
+        margin: 20px 20px;
+    }
+}
+
+@media(max-width: 460px) {
+    .navbar .menu-btn {
+        padding-right: 35px;
+    }
+
+    .navbar .logo a {
+        padding-left: 30px;
+
+    }
+
+    .home {
+        height: 883px;
+    }
+
+    .home .max-width {
+        margin-left: 20px;
+        margin-right: 2px;
+        flex-direction: column;
+    }
+
+    .home .first {
+        position: absolute;
+        top: 100px;
+        font-size: 120px;
+        padding-top: 70px;
+        padding-left: 15px;
+        left: 180px;
+    }
+
+    .home .intro {
+        position: absolute;
+        top: 300px;
+        padding: 0;
+    }
+
+    .home .intro .text-1 {
+        font-size: 40px;
+    }
+
+    .home .intro .text-2 {
+        font-size: 50px;
+        font-weight: 300;
+    }
+
+    .home .intro .text-3 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .home .intro .text-3 span {
+        font-size: 40px;
+    }
+
+    .home .intro a {
+        font-size: 20px;
+        margin-left: 100px;
+        padding: 15px;
+        box-shadow: 2px 2px 4px rgb(70, 1, 24);
+    }
+
+    .about .about-content {
+        flex-direction: column;
+    }
+
+    .about {
+        padding: 20px 1px 20px 1px;
+    }
+
+    .about .max-width {
+        height: 730px;
+        padding: 0;
+    }
+
+    .max-width h2 {
+        font-size: 50px;
+        padding-left: 10px;
+        margin-left: 5px;
+    }
+
+    .about .about-content .right-side {
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .about .about-content .right-side img {
+        position: absolute;
+        top: 1008px;
+        height: 350px;
+        width: 400px;
+        left: 75px;
+    }
+
+    .about .about-content .left-side {
+        position: absolute;
+        top: 1374px;
+        padding: 5px 10px 5px 28px;
+        width: 100%;
+    }
+
+    .about .about-content .left-side .name {
+        font-size: 25px;
+    }
+
+    .about .about-content .left-side .about-me {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    .about .about-content .left-side a {
+        font-size: 22px;
+    }
+
+    .skills-content {
+        max-width: 300px;
+    }
+
+    .detail .leftside,
+    .rightside {
+        padding: 2px auto;
+    }
+
+    .detail .leftside input {
+        width: 260px;
+    }
+
+    .detail .leftside button {
+        font-size: 18px;
+    }
+    .certificate .max-width h2{
+        margin-left: 60px;
+    }
+    .certificate .token {
+        margin: 20px 25px;
+        width: 340px;
+        height: 250px;
+    }
+    .certificate .token img{
+        width: 340px;
+        height: 250px;
+    }
+}
+
+@media(max-width: 415px) {
+    .home {
+        height: 900px;
+    }
+
+    .about .max-width {
+        height: 866px;
+    }
+
+    .about .about-content .right-side img {
+        height: 380px;
+        top: 1050px;
+    }
+
+    .about .about-content .left-side {
+        top: 1480px;
+    }
+
+    .detail .leftside {
+        margin: 1px auto;
+        padding: 1px auto;
+    }
+
+    .detail .leftside input {
+        width: 240px;
+    }
+    .certificate .token {
+        width: 320px;
+    }
+    .certificate .token img{
+        width: 320px;
+    }
+}
+
+@media(max-width: 400px) {
+    .home {
+        height: 910px;
+    }
+
+    .home .first {
+        left: 160px;
+    }
+
+    .home .intro a {
+        margin-left: 78px;
+    }
+
+    .navbar .menu-btn {
+        padding-right: 45px;
+    }
+
+    .about .max-width {
+        height: 808px;
+    }
+
+    .about .about-content .right-side img {
+        top: 1020px;
+        height: 350px;
+        width: 400px;
+        left: 55px;
+    }
+
+    .about .about-content .left-side {
+        top: 1420px;
+    }
+
+    .detail .leftside input {
+        width: 220px;
+    }
+    .certificate .token {
+        width: 300px;
+        height: 220px;
+    }
+    .certificate .token img{
+        width: 300px;
+        height: 220px;
+    }
+}
+
+@media(max-width: 380px) {
+    .home {
+        height: 665px;
+    }
+
+    .home .intro a {
+        margin-left: 70px;
+    }
+
+    .navbar .menu-btn {
+        padding-right: 55px;
+    }
+
+    .about .max-width {
+        height: 623px;
+    }
+
+    .about .max-width h2 {
+        padding-top: 1px;
+        font-size: 38px;
+        margin-top: 1px;
+    }
+
+    .about .about-content .right-side img {
+        top: 750px;
+        height: 280px;
+        width: 350px;
+        left: 80px;
+    }
+
+    .about .about-content .left-side {
+        top: 1050px;
+    }
+
+    .about .about-content .left-side .name {
+        font-size: 22px;
+    }
+
+    .about .about-content .left-side .about-me {
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 370px) {
+    .home {
+        height: 705px;
+    }
+
+    .detail {
+        font-size: 15px;
+    }
+
+    .detail .rightside .ques {
+        font-weight: 300;
+        font-size: 25px;
+    }
+
+    .detail .leftside input {
+        width: 200px;
+    }
+    .certificate .token {
+        width: 285px;
+        height: 200px;
+    }
+    .certificate .token img{
+        width: 285px;
+        height: 200px;
+    }
+}
+
+@media(max-width: 362px) {
+    .home {
+        height: 738px;
+    }
+
+    .home .intro {
+        top: 320px;
+    }
+
+    .home .intro .text-1,
+    .text-3 {
+        font-size: 30px;
+    }
+
+    .home .first {
+        top: 60px;
+        font-size: 150px;
+    }
+
+    .about .max-width {
+        margin-top: 7px;
+        height: 700px;
+    }
+
+    .about .max-width .right-side img {
+        top: 840px;
+        left: 70px;
+        height: 340px;
+    }
+
+    .about .max-width .left-side {
+        top: 1200px;
+    }
+    .certificate .token {
+        width: 275px;
+        height: 220px;
+    }
+    .certificate .token img{
+        width: 275px;
+        height: 220px;
+    }
+}
